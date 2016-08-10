@@ -1,5 +1,5 @@
 USER = 'jairocaro';
-PASS = 'descargarte';
+PASS = '********';
 URL = 'https://cloud.netelip.com';
 
 browser.setViewportSize({
