@@ -1,12 +1,8 @@
-require('../commands');
-
-var USER = 'jairocaro';
-var PASS = 'descargarte';
-
+require('../../commands');
 
 describe('Administracion de los servicios', function() {
     it('Login', function() {
-        browser.url('https://cloud.netelip.com');
+        browser.url(URL);
         browser.login(USER, PASS);
     });
 
@@ -64,6 +60,10 @@ describe('Administracion de los servicios', function() {
 
     it('Renovar servicios', function() {
         browser.UI_renovar_servicios();
+    });
+
+    it('Ayuda', function() {
+        browser.UI_ayuda();
     });
 
     it('Tienda', function() {

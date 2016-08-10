@@ -20,8 +20,11 @@ exports.config = {
         login: [
             './test/login/*.js'
         ],
-        panel: [
-            './test/panel/*.js'
+        UI_admin: [
+            './test/UI/administracion/*.js'
+        ],
+        UI_servicios: [
+            './test/UI/servicios/*.js'
         ]
     },
     //
@@ -40,7 +43,7 @@ exports.config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    maxInstances: 10,
+    maxInstances: 1,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -123,7 +126,8 @@ exports.config = {
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
     mochaOpts: {
-        ui: 'bdd'
+        ui: 'bdd',
+        timeout: 10000000
     },
     //
     // =====
