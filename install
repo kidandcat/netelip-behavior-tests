@@ -1,0 +1,6 @@
+#! /bin/bash
+
+npm install -g wdio
+npm install -g chromedriver
+npm install -g wdio-mocha-framework
+npm install -g selenium-webdriver
